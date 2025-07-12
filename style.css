@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Playpen+Sans:wght@100..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Playpen Sans", cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #492a0f, #a15d22);
+}
+
+.contato {
+    background-color: #bc6d13;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    background-color: #da7e15;
+    border-radius: 3vh;
+}
+
+.topo img {
+    width: 27vh;
+    height: 28vh;
+    padding: 6px;
+    background-color: white;
+    border-radius: 20vh;
+}
+
+.topo h1 {
+    font-size: 7vh;
+    padding-top: 60px;
+    padding-left: 1.5vh;
+    font-family: "Arimo", sans-serif;
+}
+
+ul {
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.meio,
+.fim {
+    background-color: #bc6d13;
+    padding-top: 8vh;
+    padding: 5px;
+}
+
+.meio p,
+.fim p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a p {
+    padding-left: 2vh;
+    font-size: 4vh;
+}
+
+#texto-1,
+#texto-2 {
+    font-size: 6vh;
+    padding-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.meio img {
+    height: 5vh;
+    width: 5vh;
+}
+
+@media (max-width:1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .topo {
+        justify-content: flex-start;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+        gap: 3vh;
+    }
+
+    #texto-1,
+    #texto-2 {
+        font-size: 4vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .meio,
+    .fim {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .topo h1 {
+        font-size: 6vh;
+    }
+
+    a p {
+        font-size: 3.5vh;
+    }
+}
+
+@media (max-width: 430px) {
+    a p {
+        font-size: 2.8vh;
+    }
+}
+
+@media (max-width: 350px) {
+    .topo h1 {
+        font-size: 4vh;
+    }
+
+    a p {
+        font-size: 2.3vh;
+    }
+
+    #texto-1,
+    #texto-2 {
+        font-size: 3vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
