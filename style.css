@@ -18,23 +18,28 @@ body {
 .topo {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #da7e15;
     border-radius: 3vh;
-}
-
-.topo img {
-    width: 27vh;
-    height: 28vh;
-    padding: 6px;
-    background-color: white;
-    border-radius: 20vh;
+    background-image: url('https://i.postimg.cc/3wXK56fm/carne.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    position: relative;
 }
 
 .topo h1 {
     font-size: 7vh;
-    padding-top: 60px;
-    padding-left: 1.5vh;
+    padding-top: 0;
+    padding-left: 0;
     font-family: "Arimo", sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    position: absolute;
+
 }
 
 ul {
@@ -92,9 +97,6 @@ a p {
         overflow-x: hidden;
     }
 
-    .topo {
-        justify-content: flex-start;
-    }
 
     ul {
         grid-template-columns: 1fr;
@@ -121,13 +123,13 @@ a p {
     }
 
     a p {
-        font-size: 3.5vh;
+        font-size: 3.4vh;
     }
 }
 
 @media (max-width: 430px) {
     a p {
-        font-size: 2.8vh;
+        font-size: 2.7vh;
     }
 }
 
@@ -137,7 +139,7 @@ a p {
     }
 
     a p {
-        font-size: 2.3vh;
+        font-size: 2.2vh;
     }
 
     #texto-1,
