@@ -35,9 +35,9 @@ body {
     padding-left: 0;
     font-family: "Arimo", sans-serif;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #673b15a1;
     padding: 1vh 2vh;
-    border-radius: 1vh;
+    border-radius: 2vh;
     position: absolute;
 
 }
